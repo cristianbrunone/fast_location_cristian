@@ -33,3 +33,11 @@ export 'package:fast_location/scr/modules/history/page/history_page.dart';
 
 // Projeto: Modules - Initial
 export 'package:fast_location/scr/modules/initial/page/initial_page.dart';
+
+//Projeto: Modules - Home
+export 'package:fast_location/scr/modules/history/controller/home_controller.dart';
+export 'package:fast_location/scr/modules/home/components/search_address.dart';
+
+//Projeto: Components
+export 'package:fast_location/scr/modules/home/components/search_empty.dart';
+export 'package:fast_location/scr/shared/components/app_button.dart';
