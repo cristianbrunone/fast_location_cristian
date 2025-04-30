@@ -47,7 +47,7 @@ class _AddressListState extends State<AddressList> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: const [
-            Icon(Icons.location_off, size: 40, color: Colors.green),
+            Icon(Icons.location_off, size: 40, color: AppColors.appPrimary),
             Padding(
               padding: EdgeInsets.all(10.0),
               child: Text(

@@ -1,4 +1,5 @@
 import 'package:fast_location/scr/shared/imports/imports.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,7 +14,11 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Fast Location',
-      theme: ThemeData(primarySwatch: Colors.green),
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        fontFamily: GoogleFonts.poppins().fontFamily,
+      ),
+
       home: const InitialPage(),
       debugShowCheckedModeBanner: false,
       routes: {

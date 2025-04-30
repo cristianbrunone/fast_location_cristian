@@ -27,7 +27,10 @@ class _HistoryPageState extends State<HistoryPage> {
                 backgroundColor: AppColors.appPageBackground,
                 elevation: 0,
                 leading: IconButton(
-                  icon: const Icon(Icons.arrow_back, color: Colors.green),
+                  icon: const Icon(
+                    Icons.arrow_back,
+                    color: AppColors.appPrimary,
+                  ),
                   onPressed: () => Navigator.pop(context),
                 ),
               ),
@@ -51,13 +54,13 @@ class _HistoryPageState extends State<HistoryPage> {
                               Icon(
                                 Icons.share_location,
                                 size: 30,
-                                color: Colors.green,
+                                color: AppColors.appPrimary,
                               ),
                               SizedBox(width: 10),
                               Text(
                                 "Endereços Localizados",
                                 style: TextStyle(
-                                  color: Colors.green,
+                                  color: AppColors.appPrimary,
                                   fontSize: 25,
                                   fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.bold,

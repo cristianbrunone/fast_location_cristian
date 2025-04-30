@@ -1,4 +1,5 @@
 import 'package:fast_location/scr/shared/imports/imports.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class InitialPage extends StatefulWidget {
   const InitialPage({super.key});
@@ -42,14 +43,16 @@ class _InitialPageState extends State<InitialPage>
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Padding(
+              Padding(
                 padding: EdgeInsets.only(bottom: 10),
                 child: Text(
                   "Fast Location",
                   style: TextStyle(
-                    color: Colors.green,
+                    color: AppColors.appPrimary,
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
+                    fontFamily: GoogleFonts.bebasNeue().fontFamily,
+                    letterSpacing: 1.12,
                   ),
                 ),
               ),
@@ -57,7 +60,11 @@ class _InitialPageState extends State<InitialPage>
                 turns: _animation,
                 child: const Padding(
                   padding: EdgeInsets.all(8),
-                  child: Icon(size: 150, color: Colors.green, Icons.directions),
+                  child: Icon(
+                    size: 150,
+                    color: AppColors.appPrimary,
+                    Icons.directions,
+                  ),
                 ),
               ),
             ],
